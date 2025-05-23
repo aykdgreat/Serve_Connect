@@ -167,7 +167,7 @@ const SingleListingPage = () => {
             Posted {formattedDate}
           </span>
         </p>
-        <div className="font-medium my-2">{listing.description}</div>
+        <div className="font-medium my-2" style={{ whiteSpace: 'pre-line' }}>{listing.description}</div>
         <div>Duration: {listing.duration}</div>
         <div>
           Accepting volunteers based on:{" "}
