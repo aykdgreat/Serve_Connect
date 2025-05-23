@@ -42,7 +42,7 @@ const ListingsPage = () => {
       <SearchFilter />
       <h1 className="text-center text-4xl my-6">Available Opportunities</h1>
       {listings && listings.length > 0 ? (
-        <div className="grid justify-center gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid auto-rows-fr justify-center gap-4 sm:grid-cols-2 md:grid-cols-3">
           {listings.map((listing) => (
             <ListingCard listing={listing} key={listing.id} />
           ))}
